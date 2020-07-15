@@ -71,7 +71,7 @@ VALUES
 ('10001','홍길동','무역학과',3,'010-111-1111','서울특별시',33); -- 데이터들
 
 -- 데이터를 INSERT 할 때 혹시 실수로 PK 칼럼에 이미 저장된 데이터를
--- 또 INSERT 하려고 하면 unipue 오류가 발생하면서 데이터를 저장하지 않는다.
+-- 또 INSERT 하려고 하면 unique 오류가 발생하면서 데이터를 저장하지 않는다.
 -- 이로서 PK 칼럼의 값이 중복되는 것을 방지하여 데이터 무결성을 유지한다.
 
 CREATE TABLE tbl_student(
@@ -81,7 +81,7 @@ CREATE TABLE tbl_student(
     st_grade NUMBER(1),		
     st_tel	VARCHAR(20),		
     st_addr	VARCHAR(125),		
-    st_age	NUMBER(1),
+    st_age	NUMBER(1)
 );
 
 INSERT INTO tbl_student (st_num, st_name) VALUES('10001','홍길동');
