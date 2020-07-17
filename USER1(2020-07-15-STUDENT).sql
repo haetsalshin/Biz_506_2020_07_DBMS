@@ -2,6 +2,16 @@
 SELECT st_dept FROM tbl_student
 GROUP BY st_dept;
 
+DROP TABLE tbl_dept;
+CREATE TABLE tbl_dept(
+    d_code	CHAR(4)		PRIMARY KEY,
+    d_name	nVARCHAR2(20)	NOT NULL,	
+    d_prof	nVARCHAR2(20),		
+    d_assist	nVARCHAR2(20),		
+    d_tel	VARCHAR2(20),		
+    d_addr	nVARCHAR2(125)	
+);
+SELECT * FROM tbl_dept;
 
 CREATE TABLE tbl_student (
     st_num CHAR(5) PRIMARY KEY,
