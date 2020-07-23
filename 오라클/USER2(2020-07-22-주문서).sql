@@ -98,7 +98,7 @@ DESC tbl_order;
 -- 이것은 데이터 무결성을 유지하는데 매우 좋지 않은 환경이다.
 -- 이럴 때 데이터와 상관없는 SEQ 칼럼을 만들어 PK로 설정하자.
 
-SELECT * FROM tbl_order;
+SELECT *FROM tbl_order;
 
 DELETE  FROM tbl_order
 WHERE o_seq = 9;

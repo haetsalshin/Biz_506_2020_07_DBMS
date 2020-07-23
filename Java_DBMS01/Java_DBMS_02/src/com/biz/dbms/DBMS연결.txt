@@ -1,0 +1,25 @@
+======================================================================================================
+오늘만든 코드는 우리가 원리를 알기 위해 한 것
+
+실제로 현장에서는 이렇게 쓰지 않는다.
+실제로는 Frame Work를 통해서 더 간단하게 만들어서 사용한다.
+
+자바 초창기에 어떻게 해서 DB에 연결을 해서 사용을 했는지 그 원리를 알기 위해서 실습을 한 것.
+(오리지널 JDBC)
+
+Java에서 SQL을 만든다. > JDBC에게 보낸다(DB Connection) DB Connection > 오라클 드라이브 > DBMS으로 보낼 수 있는 데이터로 변환 > localhost로 보내고 > 그 데이터를 반대로 보내는 흐름
+
+
+"데이터베이스를 이용한 네트워크 연결"가 오늘 배운 실습 내용
+
+======================================================================================================
+ public final static String DB_DRIVER = "oracle.jdbc.driver.OracleDriver";
+	// package Explorer > Referenced Libraries > ojdbc6.jar > oracle.jdbc.driver > OracleDriver.claa에서
+	// 마우스 오른쪽 클릭 copy Qualified Name 클릭 후 붙여넣기 한 후 뒤의 .class는 지워준다.
+public final static String DB_URL = "jdbc:oracle:thin:@localhost:1521:xe"; 
+public final static String DB_USER = "user2";
+public final static String DB_PASSWORD = "user2"
+	
+를 잊지말자
+
+======================================================================================================
