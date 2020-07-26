@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="C:/bizwork/jdk_3rd/lombok.jar"/>
 	<classpathentry kind="lib" path="C:/bizwork/jdk_3rd/mybatis-3.5.5.jar"/>
 	<classpathentry kind="lib" path="C:/bizwork/jdk_3rd/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/bigdata/jdk_3rd/lombok.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
