@@ -38,7 +38,3 @@ DEFAULT TABLESPACE gradeTS;
 -- grade : grade User에게
 GRANT DBA TO grade;
 
-
-
-
-
