@@ -1,0 +1,27 @@
+-- 여기는 USER1화면입니다.
+
+-- 빛나리 쇼핑몰 기본정보테이블 생성
+-- 상품정보 테이블
+CREATE TABLE TBL_PRODUCT(
+    P_CODE	CHAR(6)		PRIMARY KEY,
+    P_NAME	nVARCHAR2(30)	NOT NULL,	
+    P_DCODE	CHAR(4),		
+    P_STD	nVARCHAR2(20),		
+    P_IPRICE	NUMBER,		
+    P_OPRICE	NUMBER,		
+    P_IMAGE	nVARCHAR2(125)		
+);
+
+-- 거래처정보 테이블
+CREATE TABLE TBL_DEPT(
+    D_CODE	CHAR(4)		PRIMARY KEY,
+    D_NAME	nVARCHAR2(50)	NOT NULL,	
+    D_CEO	nVARCHAR2(30)	NOT NULL,	
+    D_TEL	VARCHAR(20),
+    D_ADDRESS	nVARCHAR2(256),	
+    D_MANAGER	nVARCHAR2(50),		
+    D_MN_TEL	VARCHAR(20)		
+);
+
+DESC tbl_product;
+DESC tbl_dept;
