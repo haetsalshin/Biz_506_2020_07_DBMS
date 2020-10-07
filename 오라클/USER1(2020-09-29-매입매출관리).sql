@@ -58,3 +58,5 @@ INSERT INTO tbl_iolist(
     );
     
 COMMIT;
+
+SELECT * FROM tbl_iolist WHERE io_date BETWEEN '2020-01-01' AND '2020-10-05'; 
